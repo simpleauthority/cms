@@ -19,6 +19,10 @@
     },
     "post_tags": {
       "collection": "blog-post-tag"
+    },
+    "post_slug": {
+      "type": "string",
+      "required": true
     }
   }
 }
