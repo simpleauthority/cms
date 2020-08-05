@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_items",
+  "info": {
+    "name": "PortfolioItem"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "project_title": {
+      "type": "string",
+      "required": true
+    },
+    "project_description": {
+      "type": "text",
+      "required": true
+    },
+    "project_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "project_url": {
+      "type": "string",
+      "required": true
+    },
+    "project_source_url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

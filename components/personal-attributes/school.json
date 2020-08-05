@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_personal_attributes_schools",
+  "info": {
+    "name": "School",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "program_name": {
+      "type": "string",
+      "required": true
+    },
+    "school_name": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date"
+    }
+  }
+}

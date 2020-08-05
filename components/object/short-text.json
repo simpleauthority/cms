@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_object_short_texts",
+  "info": {
+    "name": "ShortText",
+    "icon": "pen"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

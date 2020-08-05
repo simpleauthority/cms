@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_object_long_texts",
+  "info": {
+    "name": "LongText",
+    "icon": "copy"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

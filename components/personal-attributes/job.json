@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_personal_attributes_jobs",
+  "info": {
+    "name": "Job",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "job_title": {
+      "type": "string",
+      "required": true
+    },
+    "company_name": {
+      "type": "string",
+      "required": true
+    },
+    "start_date": {
+      "type": "date",
+      "required": true
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "object.long-text",
+      "required": true
+    }
+  }
+}

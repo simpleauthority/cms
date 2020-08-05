@@ -1,0 +1,53 @@
+{
+  "kind": "singleType",
+  "collectionName": "resumes",
+  "info": {
+    "name": "Resume"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "full_name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "phone_number": {
+      "type": "string",
+      "required": true
+    },
+    "current_goal": {
+      "type": "text",
+      "required": true
+    },
+    "relevant_skills": {
+      "type": "component",
+      "repeatable": true,
+      "component": "object.short-text",
+      "required": true
+    },
+    "other_skills": {
+      "type": "component",
+      "repeatable": true,
+      "component": "object.short-text",
+      "required": true
+    },
+    "professional_experience": {
+      "type": "component",
+      "repeatable": true,
+      "component": "personal-attributes.job",
+      "required": true
+    },
+    "education": {
+      "type": "component",
+      "repeatable": true,
+      "component": "personal-attributes.school",
+      "required": true
+    }
+  }
+}
