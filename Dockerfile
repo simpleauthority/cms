@@ -7,6 +7,9 @@ WORKDIR /app
 # Install dependencies
 RUN yarn install
 
+# Set environment
+ENV NODE_ENV production
+
 # Build application
 RUN yarn build
 
