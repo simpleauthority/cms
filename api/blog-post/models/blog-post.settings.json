@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_posts",
+  "info": {
+    "name": "BlogPost"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "post_title": {
+      "type": "string",
+      "required": true
+    },
+    "post_content": {
+      "type": "richtext",
+      "required": true
+    },
+    "post_tags": {
+      "collection": "blog-post-tag"
+    }
+  }
+}
