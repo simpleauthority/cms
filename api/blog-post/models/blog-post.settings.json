@@ -22,7 +22,8 @@
     },
     "post_slug": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     }
   }
 }
