@@ -33,8 +33,7 @@ export const EDITOR_JS_TOOLS = {
       services: {
           youtube: true,
           codepen: true,
-          gfycat: true,
-          instagram: true
+          gfycat: true
       }
   },
   table: Table,
