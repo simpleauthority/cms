@@ -5,23 +5,30 @@ import { EDITOR_JS_TOOLS } from './tools'
 
 class Editor extends React.Component {
     componentDidMount() {
-        this.editorInstance
+        console.log("mounted component, scheduling a delayed render...")
+        setTimeout(() => {
+            console.log("now rendering data in editor")
+
+            const { value } = this.props
+            
+            let parsed
+            try {
+                parsed = JSON.parse(value)
+            } catch {
+                parsed = null
+            }
+
+            this.editorInstance.render(parsed)
+        }, 1000)
     }
 
     render() {
         const { onChange, name, value } = this.props;
         
-        let currentData
-        try {
-            currentData = JSON.parse(value)
-        } catch {
-            currentData = null
-        }
-        
         return <EditorJS
                 instanceRef={instance => this.editorInstance = instance}
-                data={currentData}
                 tools={EDITOR_JS_TOOLS}
+                data={JSON.parse(value)}
                 onChange={async () => {
                     try {
                         const data = await this.editorInstance.save();
