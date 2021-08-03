@@ -5,16 +5,16 @@ RUN git clone https://github.com/simpleauthority/cms.git /app
 WORKDIR /app
 
 # Install dependencies
-RUN yarn install
+RUN npm install --arch=arm64 --platform=linuxmusl
 
 # Set environment
 ENV NODE_ENV production
 
 # Build application
-RUN yarn build
+RUN npm build
 
 # Expose the port
 EXPOSE 1337
 
 # Start the app
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
